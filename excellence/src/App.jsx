@@ -6,11 +6,14 @@ import HomePage from "./pages/HomePage";
 import "./index.css";
 import ProtectedRoute from "./components/ProtectedRoute";
 import TodoApp from "./components/Todo";
+import Dashboard from "./pages/Dashboard";
+import Navbar from "./layout/Navbar";
 
 
 export default function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
